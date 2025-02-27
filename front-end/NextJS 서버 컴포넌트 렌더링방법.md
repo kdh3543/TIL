@@ -31,5 +31,16 @@ Dan abramov(리덕스 만든 사람) - 기존에 컴포넌트는 하나 밖에 �
 1. 서버에서 렌더링한 HTML을 받아 즉시 보여줌(preview of the Routes)
 2. RSC 페이로드를 받아와서 reconcile(리액트 트리를 구성 => 가상 DOM 작업 후 실제 DOM에 update)
    =>클라이언트 컴포넌트와 서버 컴포넌트를 reconcile해 placeholder를 채움
+
    ![alt text](image-2.png)
+
 3. hydrate(수화) - 인터렉션 가능하게 하는 작업(JavaScript, Instructions)
+
+ex)
+hydrate 되기 전 서버에서 렌더된 html
+![alt text](image-3.png)
+
+### 클라이언트 컴포넌트 렌더링
+
+Full page load 과정일 때에는 서버 컴포넌트 렌더링과 동일한 렌더
+Subsequent Navigations일 때에는 서버 렌더 없이 온전히 클라이언트에서 HTML 렌더
