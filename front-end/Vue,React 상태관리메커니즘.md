@@ -2,7 +2,7 @@
 
 #### React
 
-<strong>React는 state를 불변적으로 취급한다.</strong>즉, 새로운 상태와 이전 상태르 비교해 값이 다르다면 재렌더링시킨다.<br/>
+<strong>React는 state를 불변적으로 취급한다.</strong>즉, 새로운 상태와 이전 상태를 비교해 값이 다르다면 재렌더링시킨다.<br/>
 원시 타입(string, number 등)은 값을 비교해버리고, 객체는 참조값(reference)를 그냥 비교한다.
 
 그래서 destructing을 통해 새로운 array로 바꿔줬을 때는 새로운 참조값이 전달되어 렌더링이 일어나고, push를 해서 이전 참조값을 그대로 사용했을 때는 렌더링이 일어나지 않는다.
